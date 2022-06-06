@@ -44,6 +44,7 @@ try:
     info = data['user']
 
     print (yl + f"[+] Username : {info['username']}\n[+] User ID : {info['pk']}\n[+] Full Name : {info['full_name']}\n[+] is private : {info['is_private']}\n" + gn + f"[+] Post Count : {info['media_count']}\n[+] Follower count  : {info['follower_count']}\n[+] Following Count : {info['following_count']}\n[+] Biography : {info['biography']}\n\n"+ bl + f"[+] Profile Pic URL : {info['profile_pic_url']}\n[+] Profile Pic ID : {info['profile_pic_id']}" + cv)
+    exit()
 except instagram_private_api.errors.ClientLoginError:
     print (rd + "Username Or Password is invalid Try again :) " + cv)
     exit()
