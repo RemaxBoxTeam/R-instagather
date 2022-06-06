@@ -1,11 +1,20 @@
-from instagram_private_api import Client 
+import os
+import sys
+print ("<+> Insatlling requirements pip library ...")
+if "win" in sys.platform:
+    os.system("pip install pyfiglet colorama instagram_private_api")
+    os.system("cls")
+else:
+    os.system("pip3 install pyfiglet colorama instagram_private_api")
+    os.system("clear")
+
+from instagram_private_api import Client
 import instagram_private_api
 import ssl
-from pyfiglet import Figlet 
+from pyfiglet import Figlet
 import colorama
 import json
-import sys
-import os , getpass
+import getpass
 rd = colorama.Fore.RED
 cv = colorama.Fore.WHITE
 bl = colorama.Fore.BLUE
@@ -14,14 +23,6 @@ mag = colorama.Fore.MAGENTA
 yl = colorama.Fore.YELLOW
 gm = colorama.Fore.LIGHTGREEN_EX
 
-print (gm + "<+> Insatlling requirements pip library ...")
-
-if "win" in sys.platform:
-    os.system("pip install pyfiglet colorama instagram_private_api")
-    os.system("cls")
-else:
-    os.system("pip3 install pyfiglet colorama instagram_private_api")
-    os.system("clear")
 
 
 
